@@ -4,8 +4,355 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<style>
+    header{
+        height:150px;
+        background-color: black;
+        width:100%;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+        align-items:flex-end;
+    }
     
+    header section ol{
+        list-style: none;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+        font-size: 20px;
+        font-style: roman;
+        
+    }
+    header section li{
+        float:left;
+    }
+    header section a{
+        display: block;
+        text-align: center;
+        padding:14px 16px;
+        color:white;
+        text-decoration:none;
+
+    }
+    header section a:hover{
+        background-color: white;
+        color:black;
+
+    }
+    header img{
+        width: 125px;
+        height: 125px;
+    }
+    
+    body{
+        margin:0;
+        background-color: black;
+    }
+    hr{
+        height:50px;
+        border:none;
+    }
+    .page1{
+        width: 100%;
+        height:80svh;
+        display: flex;
+        justify-content:center;
+        background-image: url('./bgg_main_luxury.png');
+    }
+    .textform{
+        width:40%;
+        height:100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        color:white;
+        justify-content: center;
+    }
+    .page1 span h1{
+        font-size: 60px;
+    }
+
+    .page1 p{
+        font-size: 30px;
+    }
+    .page1 button{
+        width:150px;
+        height:50px;
+        font-weight: 600;
+       
+        border: none;
+    }
+    .page1 button:hover{
+        background-color: black;
+        color:white;
+        border:1px solid white;
+    }
+    .page2{
+        background-color: #d7dedc;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+    .align{
+        width:100%;
+        height:10svh;
+    }
+    .image2{
+        width:25%;
+        height: 50%;
+    }
+    .data{
+        display: flex;
+        flex-direction: column;
+        margin:100px;
+        width:30%;
+    }
+    .data button{
+        width:200px;
+        height:50px;
+        background-color: white;
+        border:1px solid black;
+    }
+    .data button:hover{
+        background-color: black;
+        color:white;
+    }
+
+  
+    .watches{
+        width: 100%;
+        height:80svh;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+    .watches .watch1{
+        width:30%;
+        background-color: white;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .watches .watch1 img {
+        width:90%;
+        height:200px;
+    }
+    .watches .watch2 img{
+        width:100%;
+        height:100%;
+    }
+    .pages{
+        width:100%;
+        height: 80svh;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+    .align2{
+        width:20%;
+        
+        height: 100%;
+        font-size: 42px;
+        font-family:sans-serif;
+        
+
+    }
+    .box {
+        width:20%;
+        height:90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: sans-serif;
+       
+    }
+    .box a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin-top: 3%;
+        
+    }
+    footer{
+        width: 100%;
+        height: 55svh;
+        background-color: #d7dedc;
+      color: #fff;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .footsection1 {
+        color: black;
+        background-color: #d7dedc;
+        width:100%;
+        height:50%;
+        margin-top: 100px;   
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        align-items: center;
+      
+    }
+  
+    .footsection1 .footerdata{
+     width: 10%;
+     
+    }
+    .footerdata p,h3{
+        font-size: 20px;
+    }
+    .footerdata p{
+        color:grey;
+    }
+   .footericon{
+    width: 20%;
+    height:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+   }
+   .icons
+   {
+    background-color:#d7dedc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width:100%;
+    height:5%;
+    margin-top:40px;
+}
+   .icon{
+    font-size: 25px;
+    width: 10%;
+
+    display: flex;
+    justify-content: space-between;
+   }
+   .foottext{
+    font-size: 15px;
+    font-family:sans-serif;
+    width: 100%;
+    background-color: #d7dedc;
+    display: flex;
+    color: grey;
+    justify-content: center;
+    margin-top:10px;
+   }
+</style>
+<body>
+    <header>
+        <section class="logo">
+            <img src="./logo_main_craft.png" alt="loading.." >
+        </section>
+        <section>
+            <ol>
+                <li><a href="#">Watches</a></li>
+                <li><a href="#">Our world</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Services</a></li>
+            </ol>
+        </section>
+    </header>
+    <hr>
+    <section class="page1"> 
+        <div class="textform"><span><h1>Inspired by legacy</h1></span>
+        <p>From boardroom to weekand,this is the watch that adapts to your world</p>
+    <button>Discover the watch</button>
+    </div>
+        <div class="image"> <img src="./Section_watch.png" alt="loading.."></div>
+    </section>
+    <hr class="align">
+    <section class="page2">
+      <span class="image2"><img src="./freepik__background__44719.png" alt="loading" ></span>
+        <div class="data">
+            <span><h1 style="font-size: 50px;font-family: Arial, Helvetica, sans-serif;">Crafting Moments That Last Forever</h1></span>
+            <span><p style="font-size: large;font-family: Arial, Helvetica, sans-serif"> From its polished stainless-steel frame to the sculpted dial, every detail of the Natursa is engineered for elegance and endurance.</p>
+            </span>
+            <span><p style="font-size: large;font-family: 'Courier New', Courier, monospace;"> Ref. 26238CD.OO.1300CD.01</p></span>
+            <button>Plan an Appointment</button>
+        </div>
+        
+    </section>
+    
+    <section class="watches"> 
+        <div class="watch1">
+            <img src="./strap.png" alt="">
+            <div><img src="./carbon_fiber.png" alt=""></div>
+           
+                <span>Ref. 26238CD.OO.1300CD.01</span><br>
+                <a href="">Discover more</a>
+            
+        </div>
+        <div class="watch2"><img src="./white_watch.png" alt=""> </div>
+        <div class="watch3"></div>
+    </section>
+
+    
+    <section class="pages">
+        <div class="align2"><h1 style="font-size: larger;">OUR 2025 <br>NOVELITIES</h1></div>
+        <div class="box">
+            <img src="./watch_black.png" alt="">
+            <h1>Selfwinding Perpetual Calendar</h1>
+            <span style="font-family: normal;line-height: 1.2;font-size: 18px;">Introducing Calibre 7138: this refined gold model pairs tone-on-tone elegance with a new movement featuring three patented mechanisms—all crown-adjusted</span>
+            <a href=""><u>Discover more</u></a>
+        </div>
+        <div class="box">
+            <img src="./watch_blue_main.png" alt="">
+            <h1>Selfwinding Perpetual Calendar</h1>
+            <span style="font-family: normal;line-height: 1.2;font-size: 18px;">Introducing Calibre 7138: this refined gold model pairs tone-on-tone elegance with a new movement featuring three patented mechanisms—all crown-adjusted</span>
+            <a href=""><u>Discover more</u></a>
+        </div>
+        <div class="box">
+            <img src="./blue_watch (1).png" alt="">
+            <h1>Selfwinding Perpetual Calendar</h1>
+            <span style="font-family: normal;line-height: 1.2;font-size: 18px;">Introducing Calibre 7138: this refined gold model pairs tone-on-tone elegance with a new movement featuring three patented mechanisms—all crown-adjusted</span>
+            <a href=""><u>Discover more</u></a>
+        </div>
+    </section>
+    <footer>
+        <section class="footsection1">
+            <div class="footerdata">
+                <h3>WATCH</h3>
+                <p>All Watches</p>
+                <p>Our collectors</p>
+                <p>New Releases</p>
+            </div>
+            <div class="footerdata">
+                <h3>OUR WORLD</h3>
+                <p>Born in Le Brassus</p>
+                <p> Stay Connected</p>
+                <p> Musee Atelier</p>
+            </div>
+            <div class="footerdata">
+                <h3>OUR SERVICES</h3>
+                <p>FAQ</p>
+                <p> Warranty</p>
+                <p>Unsubscribe</p>
+            </div>
+            <div  class="footericon">
+                <img src="./black.png" alt="" style="width: 100px;">
+                <p style="font-size: 15px;font-family: arial;color:grey;">Aeronox crafts timeless watches blending tradition and innovation.</p>
+            </div>
+        </section>
+        <section class="icons">
+            <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <span class="foottext"><p>Terms of UsePrivacy NoticeCookie Policy</p></span>
+        </section>
+     
+    </footer>
 </body>
 </html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body {
+        color: white;
+        background-color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 99px;
+        background-color: rgba(26, 26, 87, 0.747);
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 23px;
+        list-style-type: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: lavender;
+        font-size: 1.04rem;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    #firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 140px 0px;
+        align-items: center;
+    }
+
+    #firstsection>div {
+        width: 30%;
+
+    }
+
+    .rightsection img {
+        width: 80%;
+
+    }
+
+    .leftsection {
+        font-size: 3rem;
+
+    }
+
+    #element {
+        color: blueviolet;
+    }
+    hr{
+    margin: 0 80px;
+    border: 0;
+    height: 4px;
+    background: white;}
+    #secondsection{
+        
+        margin: 80px 150px;
+
+    }
+    #secondsection h2{
+        font-size: 2rem;
+    }
+    .line
+    {
+      
+        width: 134px;
+        height: 5px;
+        background: white;
+        margin: 10px 0px;
+        border: 1px solid;
+        border-radius: 10px;
+    }
+    #thirdsection{
+        margin: 100px 150px;
+    }
+    .box{
+        display: flex;
+        margin: 65px 0px;
+        justify-content: space-between;
+    }
+    .item img{
+    width: 125px;
+
+    }
+    .item img:hover{
+        width: 123px;
+    }
+    .box .item{
+        width:200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .box .item h3{
+        margin: 15px 0px;
+    }
+    #forthsection{
+        margin:40px 150px;
+        
+    }
+    .edtech{
+        margin-top: 40px;
+        font-size: 15px;
+        color:#a0a0a0;
+        position: relative;
+    }
+    .year{
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+    .degree{
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom:5px;
+    }
+    .college{
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+    .edufirst{
+        margin-bottom: 35px;
+    }
+    .edufirst,.edusecond{
+        position:relative;
+        padding-left:40px ;
+    }
+    .goal{
+        width:15px;
+        height: 15px;
+        border: 3px solid #fFBF00;
+        border-radius:50%;
+        position: absolute;
+        top:5px;
+        left:0px;
+        z-index:5;
+    }
+    .liner{
+        position:absolute;
+        width:2px;
+        top:0px;
+        left:8px;
+        bottom:0px;
+        border:2px solid #2a2a2a;
+    }
+    #fifthsection{
+        margin:30px 150px;
+    }
+  
+    .project-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:35px;
+        margin: 50px 0px;
+    }
+    .project{
+        width:43%;
+        height: 360px;
+        background-color:#1e1e1e;
+        border:2px solid #3a3a3a;
+        border-radius: 12px;
+        padding: 20px ;
+    }
+    .project:hover{
+        box-shadow: white 1.95px 1.95px 2.6px;
+    }
+    .project img{
+
+        width:100%;
+        height: 230px;
+        background-size: cover;
+    }
+    .card{
+        color: #ada8a8;
+        padding:10px;
+    }
+    .card h3{
+        color:whitesmoke;
+        margin-bottom: 10px;
+    }
+    .card p{
+        color:#a0a0a0;
+        line-height: 1.6;
+        text-align: start;
+        margin-bottom:5px;
+    }
+    .card span{
+        background-color: rgba(255,191,0,0.1);
+        color:#fFBF00;
+        padding:4px 8px;
+        border-radius:5px;
+        font-size:0.75rem;
+        margin-right: 5px;    
+    }
+    footer{
+    margin-top: 100px;
+    background-color:#2a2a2a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    footer h2{
+        margin: 50px;
+    }
+    .footitems ul {
+        list-style-type: none;
+        display: flex;
+    }
+    .footitems a{
+        margin:0px 15px;
+        text-decoration: none;
+        color:white;
+    }
+    .footericons{
+        width: 200px;
+        display:flex;
+        margin:15px 0px;
+        justify-content: space-between;
+
+    }
+    .footericons img{
+        width:1.2rem;
+    }
+    footer span{
+        margin: 10px 0px;
+    }
+    footer p{
+        color: #a0a0a0;
+        margin-bottom:30px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Mani's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#firstsection">Home</a></li>
+                    <li><a href="#secondsection">About</a></li>
+                    <li><a href="#thirdsection">Skils</a></li>
+                    <li><a href="#forthsection">Details</a></li>
+                    <li><a href="#fifthsection">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="firstsection">
+        <div class="leftsection">
+            Hi, my name is <span style="color: blueviolet;">Manikiran</span>
+            <div>and i am a passionate</div>
+            <span id="element"></span>
+        </div>
+        <div class="rightsection">
+            <img src="pg.png" alt="">
+        </div>
+    </section>
+    <hr >
+    <section id="secondsection">
+        <h2>About Me</h2>
+        <div class = "line"></div>
+        <p>Here is a sample to help you craft your own description, which can be adapted to fit your specific skills and experiences:
+            "Hi there! I'm [Your Name], a passionate and detail-oriented computer science student and aspiring web developer with a strong foundation in modern web technologies. 
+            My journey into web development began with a fascination for how digital experiences come to life, evolving from self-taught coding sessions to formal education in HTML, CSS, JavaScript, and frameworks like React and Node.js. I thrive on solving complex problems and translating innovative ideas into elegant, user-friendly applications that not only meet user needs but exceed expectations for performance and accessibility. 
+            Through my coursework and personal projects, such as developing a full-stack e-commerce platform and optimizing website performance for a local non-profit, I've honed my skills in everything from responsive design and UI/UX principles to server-side logic and database management. I believe in the power of clean, well-documented code and am adept at using version control systems like Git and collaborating effectively within agile methodologies. 
+            I'm currently seeking an entry-level position where I can apply my technical knowledge and problem-solving abilities to contribute to a dynamic team and make a positive impact through technology.  </p>
+    </section>
+    <hr>
+    <section id="thirdsection">
+        <h2>Skills</h2>
+        <div class ="line"></div>
+        <div class="box">
+            <div class="item">
+                <img src="./html-5.png" alt="">
+                <h3>HTML</h3>
+
+            </div>
+            <div class="item">
+                <img src="./css-3.png" alt="">
+                <h3>CSS</h3>
+
+            </div>
+            <div class="item">
+                <img src="./js.png" alt="">
+                <h3>JS</h3>
+
+            </div>
+            <div class="item">
+                <img src="./letter-c.png" alt="">
+                <h3>C</h3>
+
+            </div>
+            <div class="item">
+                <img src="./python.png" alt="">
+                <h3>PYTHON</h3>
+                
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <section id="forthsection">
+        <h2>Education</h2>
+        <div class="line"> </div>
+        <div class="edtech">
+            <div class="edufirst">
+                <div class="year">2025-2028</div>
+                <h3 class="degree">Bachelor of technology in CSE</h3>
+                <p class="college">Aditya college of Engineering and tecnology </p>
+                <p class="work">Focused on the computer basics and all the sub branches of the computer and their subjects</p>
+                <div class="goal"></div>
+            </div>
+
+            <div class="edusecond">
+                <div class="year">2022-2025</div>
+                <h3 class="degree">Diploma in CSE</h3>
+                <p class="college">Aditya college of Engineering and tecnology </p>
+                <p class="work">Focused on the computer basics and all the sub branches of the computer and their subjects</p>
+                <div class="goal"></div>
+                
+            </div>
+            <div class="liner"></div>
+        </div>
+
+    </section>
+
+    <hr>
+    <section id="fifthsection">
+        <h2>Portfolio</h2>
+        <div class="line"></div>
+        <div class="project-container">
+            <div class="project">
+                <img src="./ecommerce.jpg" alt="">
+                <div class="card">
+                    <h3>E-commerce Website</h3>
+                    <p> A fully responsive online store built modern design template.</p>
+                    <span>HTML</span><span>CSS</span>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./landing.jpg" alt="">
+                <div class="card">
+                    <h3>Landing Page</h3>
+                    <p> A fully responsive online store built modern design template.</p>
+                    <span>HTML</span><span>CSS</span><span>Flexbox</span>
+
+                </div>
+            </div>
+            <div class="project">
+                <img src="./analysi.jpg" alt="">
+                <div class="card">
+                    <h3>Analysis dashboard</h3>
+                    <p> A fully responsive online store built modern design template.</p>
+                    <span>Grid</span><span>UI/UX</span>
+
+                </div>
+            </div>
+            <div class="project">
+                <img src="./blog.jpg" alt="">
+                <div class="card">
+                    <h3>Blog template theme</h3>
+                    <p> A fully responsive online store built modern design template.</p>
+                    <span>HTML</span><span>CSS</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>Manikiran's Portfolio</h2>
+        <div class="footitems">
+             <ul>
+                    <li><a href="#firstsection">Home</a></li>
+                    <li><a href="#secondsection">About</a></li>
+                    <li><a href="#thirdsection">Skils</a></li>
+                    <li><a href="#forthsection">Details</a></li>
+                    <li><a href="#fifthsection">Portfolio</a></li>
+                </ul>
+        </div>
+        <span>Stay in touch</span>
+        <div class="footericons">
+            <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="">
+            <img src="https://www.svgrepo.com/show/475658/instagram-color.svg" alt="">
+            <img src="https://www.svgrepo.com/show/475689/twitter-color.svg" alt="">
+            <img src="https://www.svgrepo.com/show/475670/pinterest-color.svg" alt="">
+            <img src="https://www.svgrepo.com/show/475661/linkedin-color.svg" alt="">
+        </div>
+        <p>	 &#169 Manikiran's portfolio , All rights reserved</p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer.', 'Software developer.', 'Web designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
